@@ -20,7 +20,7 @@ const Header = () => {
             </div>
             <div className="others flex gap-x-6">
                <img src={sunIcon} alt="Dark Mode Toggle" />
-               <Button text="Download Resume" />
+               <Button text="Resume" />
             </div>
          </div>
       </header>

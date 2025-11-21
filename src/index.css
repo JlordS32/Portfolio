@@ -11,6 +11,22 @@
         @apply bg-white w-full text-gray-600 md:mx-auto md:max-w-7xl sm:px-6;
     }
 
+    h1 {
+        @apply text-4xl md:text-5xl lg:text-6xl;
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl lg:text-5xl;
+    }
+
+    h3 {
+        @apply text-2xl md:text-3xl lg:text-4xl;
+    }
+
+    h4 {
+        @apply text-xl md:text-2xl lg:text-3xl;
+    }
+
     h1,
     h2,
     h3,
@@ -30,6 +46,15 @@
 
     .nav-link {
         @apply hover:underline hover:text-black cursor-pointer;
+    }
+
+    .social-link {
+        @apply relative cursor-pointer flex items-center justify-center;
+
+        @apply after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-black;
+        @apply after:content-['']; 
+        @apply after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
+        @apply hover:after:scale-x-100;
     }
 }
 
