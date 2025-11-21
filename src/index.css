@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@layer base {}
+
+@layer components {}
+
+@layer utilities {
+    .debug,
+    .debug-inner > * {
+        @apply outline-1 outline-red-600;
+    }
+}
