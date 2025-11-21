@@ -7,9 +7,13 @@ type ButtonProps = {
 const Button = ({
    text = "Button",
    onClick = () => {},
-   className = "",
+   className = "btn",
 }: ButtonProps) => {
-   return <button className={className} onClick={onClick}>{text}</button>;
+   return (
+      <button className={className} onClick={onClick}>
+         {text}
+      </button>
+   );
 };
 
 export default Button;
