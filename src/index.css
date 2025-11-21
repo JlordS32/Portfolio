@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
-@layer base {}
+@theme {
+    --text-base: 16px;
+    --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-white text-gray-600;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-bold text-gray-900;
+    }
+
+    p {
+        @apply text-base;
+    }
+}
 
 @layer components {}
 
