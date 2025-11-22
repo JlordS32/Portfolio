@@ -1,51 +1,47 @@
-import ProfilePicture from "../assets/img/pfp.jpg";
+import Landing from "../components/Landing";
 
-// SVG
-import Github from "../assets/icons/github.svg";
-import LinkedIn from "../assets/icons/linkedin.svg";
+// IMG
+import Picture from "../assets/img/pfp_1.jpg";
 
 const Home = () => {
    return (
-      <div className="h-[550px] flex flex-row justify-between items-center">
-         <div className="landing w-2/3">
-            <h1>Hi, I'm Jaylou 👋</h1>
-            <p className="mt-4">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-               animi rem ea doloribus, accusantium adipisci! Similique harum
-               aperiam, iure ut tenetur provident consequatur hic iste
-               reprehenderit laudantium, veritatis assumenda tempora, voluptatum
-               dolore fugiat. Similique molestiae amet id quo doloremque quia
-               suscipit delectus nisi vel! Eveniet inventore quidem dolor.
-               Distinctio, ducimus!
-            </p>
-            <div className="icons flex flex-row gap-4 mt-4">
-               <div className="social-link">
-                  <a
-                     href="https://github.com/jlords32"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     <img src={Github} alt="GitHub Icon" />
-                  </a>
-               </div>
-               <div className="social-link">
-                  <a
-                     href="https://www.linkedin.com/in/jlords32/"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     <img src={LinkedIn} alt="LinkedIn Icon" />
-                  </a>
+      <div className="flex flex-col">
+         <Landing />
+         <section className="bg-gray-100 py-30">
+            <div className="media-screen">
+               <div className="flex flex-col">
+                  <h4 className="text-center">About me</h4>
+                  <div className="mt-8">
+                     <div className="flex flex-row w-full">
+                        <div className="profile-picture bg-white">
+                           <img
+                              src={Picture}
+                              alt="Selfie"
+                              className="w-[280px] h-[280px] object-cover object-top"
+                           />
+                        </div>
+                        {/* <p>
+                           Lorem ipsum dolor sit, amet consectetur adipisicing
+                           elit. Vero maiores voluptatem dolor quod commodi nisi
+                           ullam in enim dolorem. Assumenda distinctio deleniti
+                           illo, soluta cupiditate ratione quidem vero fugiat ex
+                           vitae, suscipit sequi aliquam qui sunt aut voluptate
+                           sapiente neque alias dolor quos nisi molestiae
+                           dolorum. Amet molestias magnam quod, atque voluptas
+                           eaque, molestiae consectetur fugit aliquam vel ipsa
+                           nesciunt iste odio totam nam quia voluptatibus.
+                           Assumenda iste ipsa ipsam repudiandae, inventore
+                           doloribus reiciendis vitae nam aliquam consequuntur
+                           eius ipsum ducimus voluptates fugit necessitatibus
+                           quo laboriosam iusto quasi! Optio saepe alias culpa
+                           distinctio ex modi necessitatibus maxime itaque sunt
+                           ratione?
+                        </p> */}
+                     </div>
+                  </div>
                </div>
             </div>
-         </div>
-         <div className="profile-picture">
-            <img
-               src={ProfilePicture}
-               alt="Profile Picture"
-               className="w-[280px] h-[280px] object-cover object-top"
-            />
-         </div>
+         </section>
       </div>
    );
 };

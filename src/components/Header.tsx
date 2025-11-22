@@ -4,19 +4,28 @@ import Button from "./Button";
 
 const Header = () => {
    return (
-      <header className="flex justify-between items-center py-6">
+      <header className="flex justify-between items-center py-6 media-screen">
          <div className="logo">
-            <Link to="/"><div className="text-4xl font-bold text-gray-950">{"<JR />"}</div></Link>
+            <Link to="/">
+               <div className="text-4xl font-bold text-gray-950">
+                  {"<JR />"}
+               </div>
+            </Link>
          </div>
          <div className="nav flex">
             <div className="links flex items-center justify-center gap-6 font-medium">
-               <Link to="/about" className="nav-link">About</Link>
-               <Link to="/work" className="nav-link">Work</Link>
-               <Link to="/testimonials" className="nav-link">Testimonials</Link>
-               <Link to="/contact" className="nav-link">Contact</Link>
+               <Link to="/about" className="nav-link">
+                  About
+               </Link>
+               <Link to="/work" className="nav-link">
+                  Work
+               </Link>
+               <Link to="/contact" className="nav-link">
+                  Contact
+               </Link>
             </div>
             <div>
-                <div className="divider mx-6 h-full border-l border-gray-300"></div>
+               <div className="divider mx-6 h-full border-l border-gray-300"></div>
             </div>
             <div className="others flex gap-x-6">
                <img src={sunIcon} alt="Dark Mode Toggle" />
