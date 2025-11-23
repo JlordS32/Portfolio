@@ -9,6 +9,14 @@ const Home = () => {
          <Landing />
          <About />
          <Skills />
+         <section id="work" className="work bg-gray-100">
+            <div className="media-screen ">
+               <div className="flex flex-col">
+                  <p className="section">Work Experience</p>
+                  <div></div>
+               </div>
+            </div>
+         </section>
       </div>
    );
 };
