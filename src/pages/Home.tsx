@@ -7,6 +7,11 @@ const Home = () => {
       <div className="flex flex-col">
          <Landing />
          <About />
+         <section className="skills">
+            <div className="media-screen">
+               
+            </div>
+         </section>
       </div>
    );
 };

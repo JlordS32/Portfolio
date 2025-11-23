@@ -3,7 +3,7 @@ import Picture from "../assets/img/pfp_1.jpg";
 
 const About = () => {
    return (
-      <section className="bg-gray-100 py-20">
+      <section className="bg-gray-100">
          <div className="media-screen">
             <div className="flex flex-col">
                <p className="section">About me</p>
