@@ -2,10 +2,11 @@ import type { ReactNode } from "react";
 
 type CardProps = {
     children: ReactNode;
+    className?: string;
 }
 
-const Card = ({ children }: CardProps) => {
-   return <div className="card">{children}</div>;
+const Card = ({ children, className }: CardProps) => {
+   return <div className={`card ${className ?? ""}`}>{children}</div>;
 };
 
 export default Card;

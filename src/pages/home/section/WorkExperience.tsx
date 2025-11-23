@@ -14,7 +14,7 @@ const WorkExperience = () => {
                </p>
                <div className="flex flex-col gap-10 justify-center">
                   {/* Experience Cards go here */}
-                  <Card>
+                  <Card className="p-6">
                      <div className="flex flex-row gap-x-12">
                         <div className="company-logo">
                            <a
