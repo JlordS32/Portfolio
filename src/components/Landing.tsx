@@ -47,7 +47,7 @@ const Landing = () => {
                </div>
             </div>
          </div>
-         <div className="profile-picture bg-white">
+         <div className="profile-picture bg-white before:left-1/5 before:top-1/5">
             <img
                src={ProfilePicture}
                alt="Profile Picture"

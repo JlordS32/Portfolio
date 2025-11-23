@@ -64,7 +64,17 @@
    }
 
    .profile-picture {
-      @apply p-2 before:absolute before:content-[''] before:w-[92.5%] before:h-[92.5%] before:top-1/5 before:left-1/5 relative before:-z-1 before:bg-gray-300;
+      @apply z-20 before:absolute before:content-[''] before:w-[92.5%] before:h-[92.5%] relative before:z-10 before:bg-gray-300;
+   }
+
+   .profile-picture img {
+      @apply relative z-20 p-2 bg-white;
+   }
+
+   .section {
+      @apply text-sm text-center bg-gray-200 self-center px-4 py-1 rounded-full text-gray-500;
+      /* Animation */
+      @apply hover:rotate-15 hover:shadow-lg transition-all hover:scale-105 cursor-pointer;
    }
 
    .debug,

@@ -7,36 +7,27 @@ const Home = () => {
    return (
       <div className="flex flex-col">
          <Landing />
-         <section className="bg-gray-100 py-30">
+         <section className="bg-gray-100 py-20">
             <div className="media-screen">
                <div className="flex flex-col">
-                  <h4 className="text-center">About me</h4>
-                  <div className="mt-8">
-                     <div className="flex flex-row w-full">
-                        <div className="profile-picture bg-white">
+                  <p className="section">About me</p>
+                  <div className="mt-14 flex flex-row gap-x-14">
+                     <div>
+                        <div className="profile-picture bg-white w-[280px] before:top-1/6 before:right-1/5">
                            <img
                               src={Picture}
                               alt="Selfie"
-                              className="w-[280px] h-[280px] object-cover object-top"
+                              className="object-cover object-top"
                            />
                         </div>
-                        {/* <p>
-                           Lorem ipsum dolor sit, amet consectetur adipisicing
-                           elit. Vero maiores voluptatem dolor quod commodi nisi
-                           ullam in enim dolorem. Assumenda distinctio deleniti
-                           illo, soluta cupiditate ratione quidem vero fugiat ex
-                           vitae, suscipit sequi aliquam qui sunt aut voluptate
-                           sapiente neque alias dolor quos nisi molestiae
-                           dolorum. Amet molestias magnam quod, atque voluptas
-                           eaque, molestiae consectetur fugit aliquam vel ipsa
-                           nesciunt iste odio totam nam quia voluptatibus.
-                           Assumenda iste ipsa ipsam repudiandae, inventore
-                           doloribus reiciendis vitae nam aliquam consequuntur
-                           eius ipsum ducimus voluptates fugit necessitatibus
-                           quo laboriosam iusto quasi! Optio saepe alias culpa
-                           distinctio ex modi necessitatibus maxime itaque sunt
-                           ratione?
-                        </p> */}
+                     </div>
+                     <div className="ml-12">
+                        <h4 className="leading-25">Curious about me? Here you have it.</h4>
+                        <p>
+                           I'm a passionate and aspiring tech enthusiast with a strong
+                           desire to learn and grow in the field of technology. My journey
+                           began with a fascination for computers and software, which
+                        </p>
                      </div>
                   </div>
                </div>
