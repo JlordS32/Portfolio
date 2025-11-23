@@ -14,15 +14,15 @@ const Header = () => {
          </div>
          <div className="nav flex">
             <div className="links flex items-center justify-center gap-6 font-medium">
-               <Link to="/about" className="nav-link">
+               <a href="#about" className="nav-link">
                   About
-               </Link>
-               <Link to="/work" className="nav-link">
+               </a>
+               <a href="#work" className="nav-link">
                   Work
-               </Link>
-               <Link to="/contact" className="nav-link">
+               </a>
+               <a href="#contact" className="nav-link">
                   Contact
-               </Link>
+               </a>
             </div>
             <div>
                <div className="divider mx-6 h-full border-l border-gray-300"></div>

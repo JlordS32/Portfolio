@@ -8,10 +8,10 @@ const logos = import.meta.glob("../assets/icons/logos/*.svg", {
 
 const Skills = () => {
    return (
-      <section className="skills">
+      <section id="skills" className="skills">
          <div className="media-screen">
             <div className="flex flex-col">
-               <p className="section">About me</p>
+               <p className="section">Skills</p>
                <p className="text-center mt-6 mb-12">
                   The skills, tools and technology I'm proficient at:
                </p>
