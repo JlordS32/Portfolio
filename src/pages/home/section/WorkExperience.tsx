@@ -17,7 +17,17 @@ const WorkExperience = () => {
                   <Card>
                      <div className="flex flex-row gap-x-12">
                         <div className="company-logo">
-                           <img src={PDSLogo} alt="PDS Logo" className="w-32" />
+                           <a
+                              href="https://pacificdata.solutions/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <img
+                                 src={PDSLogo}
+                                 alt="PDS Logo"
+                                 className="w-32 cursor-pointer"
+                              />
+                           </a>
                         </div>
                         <div className="flex flex-col w-[55%]">
                            <h3 className="text-xl font-semibold pb-6">
