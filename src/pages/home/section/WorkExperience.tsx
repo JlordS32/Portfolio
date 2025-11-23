@@ -1,7 +1,7 @@
-import Card from "../components/Card";
+import Card from "../../../components/Card";
 
 // Images
-import PDSLogo from "../assets/pds-logo.png";
+import PDSLogo from "../../../assets/pds-logo.png";
 
 const WorkExperience = () => {
    return (

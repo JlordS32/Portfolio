@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import logo SVGs as React components
-const logos = import.meta.glob("../assets/icons/logos/*.svg", {
+const logos = import.meta.glob("../../../assets/icons/logos/*.svg", {
    eager: true,
    query: "?react",
 });

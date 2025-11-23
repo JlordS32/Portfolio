@@ -1,8 +1,8 @@
 // Components
-import Landing from "../components/Landing";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import WorkExperience from "../components/WorkExperience";
+import Landing from "./section/Landing";
+import About from "./section/About";
+import Skills from "./section/Skills";
+import WorkExperience from "./section/WorkExperience";
 
 const Home = () => {
    return (

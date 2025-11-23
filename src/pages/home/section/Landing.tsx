@@ -1,10 +1,10 @@
 // SVG
-import Github from "../assets/icons/github.svg";
-import LinkedIn from "../assets/icons/linkedin.svg";
-import MapPin from "../assets/icons/map-pin.svg";
+import Github from "../../../assets/icons/github.svg";
+import LinkedIn from "../../../assets/icons/linkedin.svg";
+import MapPin from "../../../assets/icons/map-pin.svg";
 
 // IMG
-import ProfilePicture from "../assets/img/pfp.jpg";
+import ProfilePicture from "../../../assets/img/pfp.jpg";
 
 const Landing = () => {
    return (

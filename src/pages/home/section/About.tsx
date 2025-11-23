@@ -1,5 +1,5 @@
 // IMG
-import Picture from "../assets/img/pfp_1.jpg";
+import Picture from "../../../assets/img/pfp_1.jpg";
 
 const About = () => {
    return (
