@@ -81,6 +81,12 @@
       @apply hover:rotate-15 hover:shadow-lg transition-all hover:scale-105 cursor-pointer;
    }
 
+   .icon {
+      @apply transition-transform duration-100;
+      @apply hover:scale-105 hover:-translate-y-1;
+      @apply active:scale-95;
+   }
+
    .debug,
    .debug-inner > * {
       @apply outline-1 outline-red-600;
