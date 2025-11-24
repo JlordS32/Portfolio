@@ -3,6 +3,7 @@ import Landing from "./section/Landing";
 import About from "./section/About";
 import Skills from "./section/Skills";
 import WorkExperience from "./section/WorkExperience";
+import Projects from "./section/Projects";
 
 const Home = () => {
    return (
@@ -10,7 +11,8 @@ const Home = () => {
          <Landing />
          <About />
          <Skills />
-         <WorkExperience />  
+         <WorkExperience />
+         <Projects />
       </div>
    );
 };

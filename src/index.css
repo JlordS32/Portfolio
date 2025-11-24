@@ -84,7 +84,7 @@ html {
    }
 
    .section {
-      @apply text-xs text-center bg-gray-200 self-center px-4 py-1 rounded-full text-gray-500;
+      @apply text-sm text-center bg-gray-200 self-center px-4 py-1 rounded-full text-gray-500;
       /* Animation */
       @apply hover:rotate-15 hover:shadow-lg transition-all hover:scale-105 cursor-pointer;
    }
@@ -96,7 +96,7 @@ html {
    }
 
    .card {
-      @apply bg-white shadow-md rounded-lg transition-transform duration-300 w-[900px] mx-auto;
+      @apply bg-white shadow-md rounded-lg transition-transform duration-300 w-[900px] mx-auto overflow-hidden;
       @apply hover:shadow-xl hover:scale-101;
    }
 
