@@ -15,7 +15,7 @@ const Skills = () => {
                <p className="text-center mt-6 mb-12">
                   The skills, tools and technology I'm proficient at:
                </p>
-               <div className="flex flex-wrap justify-center gap-10 max-w-4xl mx-auto">
+               <div className="flex flex-wrap justify-center gap-10 max-w-6xl mx-auto">
                   {Object.entries(logos).map((entry) => {
                      const [path, module] = entry;
                      const IconComponent = (
