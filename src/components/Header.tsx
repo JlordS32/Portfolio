@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import sunIcon from "../assets/icons/sun.svg";
+import resumePdf from "../assets/jaylou_resume.pdf";
 import Button from "./Button";
 
 const Header = () => {
@@ -29,7 +30,15 @@ const Header = () => {
             </div>
             <div className="others flex gap-x-6">
                <img src={sunIcon} alt="Dark Mode Toggle" />
-               <Button text="Resume" />
+               <Button>
+                  <a 
+                     href={resumePdf} 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                  >
+                     Resume
+                  </a>
+               </Button>
             </div>
          </div>
       </header>
