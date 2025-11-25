@@ -33,7 +33,7 @@ const Projects = () => {
    ];
 
    return (
-      <section className="project">
+      <section id="projects" className="project">
          <div className="media-screen">
             <div className="flex flex-col">
                <p className="section">Projects</p>
