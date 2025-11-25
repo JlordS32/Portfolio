@@ -15,8 +15,6 @@ import "./index.css";
 
 // TODO: Add dark mode functionality
 // TODO: Optimize for mobile devices
-// TODO: Add animations/transitions
-// TODO: Fill any project section
 // TODO: Link supabase to dynamically update skills, projects, and work experience section.
 // TODO: Add a login page to update the content through a dashboard.
 
