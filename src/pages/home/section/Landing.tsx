@@ -12,13 +12,11 @@ const Landing = () => {
          <div className="landing w-2/3">
             <h1 className="leading-24">Hi, I'm Jaylou 👋</h1>
             <p className="mt-4">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-               animi rem ea doloribus, accusantium adipisci! Similique harum
-               aperiam, iure ut tenetur provident consequatur hic iste
-               reprehenderit laudantium, veritatis assumenda tempora, voluptatum
-               dolore fugiat. Similique molestiae amet id quo doloremque quia
-               suscipit delectus nisi vel! Eveniet inventore quidem dolor.
-               Distinctio, ducimus!
+               I am a <strong>Computer Science (Honours) student at UTS</strong>, passionate
+               about bridging the gap between complex theory and practical
+               application. My focus lies in Software Engineering and Data
+               Analytics, leveraging tools like React, TypeScript, and Docker to
+               build robust solutions.
             </p>
             <div className="location mt-12">
                <div className="flex gap-2 ">
