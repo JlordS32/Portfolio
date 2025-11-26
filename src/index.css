@@ -51,7 +51,7 @@ html {
    }
 
    section {
-      @apply py-20 bg-white;
+      @apply py-12 md:py-20 bg-white;
    }
 
    section:nth-child(even) {
@@ -108,7 +108,7 @@ html {
 
 @layer utilities {
    .media-screen {
-      @apply md:mx-auto md:max-w-7xl sm:px-6;
+      @apply md:mx-auto md:max-w-7xl ;
    }
 
    .profile-picture {

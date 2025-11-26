@@ -1,6 +1,3 @@
-import { ImageZoom } from "@/components/ui/shadcn-io/image-zoom";
-import { cn } from "@/lib/utils";
-
 // IMG
 import Picture from "../../../assets/img/pfp_1.jpg";
 
@@ -10,25 +7,18 @@ const About = () => {
          <div className="media-screen">
             <div className="flex flex-col">
                <p className="section">About me</p>
-               <div className="mt-14 flex flex-row gap-x-14">
-                  <div>
-                     <div className="profile-picture w-[280px] before:top-1/6 before:right-1/5">
-                        <ImageZoom
-                           zoomMargin={100}
-                           backdropClassName={cn(
-                              '[&_[data-rmiz-modal-overlay="visible"]]:bg-black/80'
-                           )}
-                        >
-                           <img
-                              src={Picture}
-                              alt="Selfie"
-                              className="object-cover object-top"
-                           />
-                        </ImageZoom>
+               <div className="mt-14 flex flex-col gap-x-24 md:flex-row">
+                  <div className="md:block flex justify-center align-center">
+                     <div className="profile-picture w-[280px] before:top-1/8 before:right-1/7">
+                        <img
+                           src={Picture}
+                           alt="Selfie"
+                           className="object-cover object-top w-full h-full block"
+                        />
                      </div>
                   </div>
-                  <div className="ml-12">
-                     <h4 className="leading-25">
+                  <div className="p-4">
+                     <h4 className="leading-25 text-center md:text-left ">
                         Curious about me? Here you have it.
                      </h4>
                      <p>
