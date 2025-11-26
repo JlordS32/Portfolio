@@ -91,7 +91,7 @@ const Projects = () => {
                                     : "flex-row-reverse"
                               } gap-6`}
                            >
-                              <div className="img-container flex align-center justify-center w-1/2 bg-gray-100 p-6">
+                              <div className="img-container flex align-center justify-center w-1/2 bg-gray-100 dark:bg-gray-700 p-6">
                                  <div className="self-center">
                                     <Zoom>
                                        <img
@@ -111,7 +111,7 @@ const Projects = () => {
                                     {techStack.map((tech, techIndex) => (
                                        <span
                                           key={techIndex}
-                                          className="text-xs bg-gray-200 px-3 py-1 rounded-full"
+                                          className="text-xs bg-gray-200 dark:text-white dark:bg-gray-600 px-3 py-1 rounded-full"
                                        >
                                           {tech}
                                        </span>

@@ -7,13 +7,29 @@ import SunIcon from "../assets/icons/sun.svg?react";
 import MoonIcon from "../assets/icons/moon.svg?react";
 
 const Header = () => {
-   const [isDark, setIsDark] = useState<boolean>(false);
+   const [isDark, setIsDark] = useState<boolean>(() => {
+      const savedMode = localStorage.getItem("isDark");
+
+      // If "isDark exists"
+      if (savedMode != null) {
+         return savedMode === "true"
+      }
+
+      // If "isDark" does not exist, fallback to preference scheme.
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+         return true;
+      }
+
+      return false;
+   });
 
    useEffect(() => {
       if (isDark) {
          document.documentElement.classList.add("dark");
+         localStorage.setItem("isDark", "true");
       } else {
          document.documentElement.classList.remove("dark");
+         localStorage.setItem("isDark", "false");
       }
    }, [isDark]);
 

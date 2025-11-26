@@ -36,7 +36,7 @@ const Contact = () => {
                      <div>
                         <EmailIcon className="inline-block w-8 h-8 mr-2 text-gray-400" />
                      </div>
-                     <div className="text-3xl">jlordsty128@gmail.com</div>
+                     <div className="text-2xl dark:text-white">jlordsty128@gmail.com</div>
                      <Button
                         onClick={() =>
                            handleCopy("jlordsty128@gmail.com", "email")
@@ -61,7 +61,7 @@ const Contact = () => {
                      <div>
                         <PhoneIcon className="inline-block w-8 h-8 mr-2 text-gray-400" />
                      </div>
-                     <div className="text-3xl">+61449977526</div>
+                     <div className="text-2xl dark:text-white">+61449977526</div>
                      <Button
                         onClick={() => handleCopy("+61449977526", "phone")}
                      >
@@ -88,7 +88,7 @@ const Contact = () => {
                            target="_blank"
                            rel="noreferrer"
                         >
-                           <GithubIcon className="text-black"/>
+                           <GithubIcon className="social" />
                         </a>
                      </div>
                      <div className="social-link">
@@ -97,7 +97,7 @@ const Contact = () => {
                            target="_blank"
                            rel="noreferrer"
                         >
-                           <LinkedInIcon className="text-black" />
+                           <LinkedInIcon className="social" />
                         </a>
                      </div>
                   </div>

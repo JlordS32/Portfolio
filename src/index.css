@@ -62,11 +62,6 @@ html {
       @apply bg-white;
       @apply dark:bg-gray-950;
    }
-
-   svg {
-      @apply text-gray-900;
-      @apply dark:text-white;
-   }
 }
 
 @layer components {
@@ -104,6 +99,10 @@ html {
    ul li {
       @apply mb-1;
    }
+
+   svg.social {
+      @apply dark:text-white;
+   }
 }
 
 @layer utilities {
@@ -124,6 +123,8 @@ html {
       @apply text-sm text-center bg-gray-200 self-center px-4 py-1 rounded-full text-gray-500;
       /* Animation */
       @apply hover:rotate-15 hover:shadow-lg transition-all hover:scale-105 cursor-pointer;
+      /* Dark */
+      @apply dark:bg-gray-600 dark:text-gray-300;
    }
 
    .icon {
@@ -133,7 +134,7 @@ html {
    }
 
    .card {
-      @apply bg-white shadow-md/20 rounded-lg transition-transform duration-300 w-[900px] mx-auto overflow-hidden;
+      @apply bg-white dark:bg-gray-800 dark:text-gray-300 shadow-md/20 rounded-lg transition-transform duration-300 w-[900px] mx-auto overflow-hidden;
       @apply hover:shadow-xl hover:scale-101;
    }
 

@@ -21,7 +21,7 @@ const Landing = () => {
             </p>
             <div className="location mt-12">
                <div className="flex gap-2 ">
-                  <MapPinIcon />
+                  <MapPinIcon className="social" />
                   <span>Sydney, NSW</span>
                </div>
             </div>
@@ -32,7 +32,7 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <GithubIcon />
+                     <GithubIcon className="social"/>
                   </a>
                </div>
                <div className="social-link">
@@ -41,7 +41,7 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <LinkedInIcon />
+                     <LinkedInIcon className="social"/>
                   </a>
                </div>
                <div className="social-link">
@@ -50,7 +50,7 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <FrontendMentorIcon />
+                     <FrontendMentorIcon className="social"/>
                   </a>
                </div>
             </div>
