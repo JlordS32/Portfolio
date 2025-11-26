@@ -1,3 +1,6 @@
+import { ImageZoom } from "@/components/ui/shadcn-io/image-zoom";
+import { cn } from "@/lib/utils";
+
 // SVG
 import GithubIcon from "../../../assets/icons/github.svg?react";
 import LinkedInIcon from "../../../assets/icons/linkedin.svg?react";
@@ -32,7 +35,7 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <GithubIcon className="social"/>
+                     <GithubIcon className="social" />
                   </a>
                </div>
                <div className="social-link">
@@ -41,7 +44,7 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <LinkedInIcon className="social"/>
+                     <LinkedInIcon className="social" />
                   </a>
                </div>
                <div className="social-link">
@@ -50,17 +53,24 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <FrontendMentorIcon className="social"/>
+                     <FrontendMentorIcon className="social" />
                   </a>
                </div>
             </div>
          </div>
-         <div className="profile-picture bg-white before:left-1/5 before:top-1/5">
-            <img
-               src={ProfilePicture}
-               alt="Profile Picture"
-               className="w-[280px] h-[280px] object-cover object-top"
-            />
+         <div className="profile-picture before:left-1/5 before:top-1/5">
+            <ImageZoom
+               zoomMargin={100}
+               backdropClassName={cn(
+                  '[&_[data-rmiz-modal-overlay="visible"]]:bg-black/80'
+               )}
+            >
+               <img
+                  src={ProfilePicture}
+                  alt="Profile Picture"
+                  className="w-[280px] h-[280px] object-cover object-top"
+               />
+            </ImageZoom>
          </div>
       </div>
    );

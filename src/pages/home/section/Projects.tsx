@@ -4,8 +4,8 @@ import MagiPlant from "../../../assets/img/magiplant.png";
 import Audiophile from "../../../assets/img/audiophile.png";
 import CodeIcon from "../../../assets/icons/code.svg?react";
 import GlobeIcon from "../../../assets/icons/globe.svg?react";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
+import { ImageZoom } from "@/components/ui/shadcn-io/image-zoom";
+import { cn } from "@/lib/utils";
 
 type Project = {
    title: string;
@@ -93,20 +93,27 @@ const Projects = () => {
                            >
                               <div className="img-container flex align-center justify-center w-1/2 bg-gray-100 dark:bg-gray-700 p-6">
                                  <div className="self-center">
-                                    <Zoom>
+                                    <ImageZoom
+                                       zoomMargin={100}
+                                       backdropClassName={cn(
+                                          '[&_[data-rmiz-modal-overlay="visible"]]:bg-black/80'
+                                       )}
+                                    >
                                        <img
                                           src={imageUrl}
-                                          alt={title}
+                                          alt={`${title} Image`}
                                           className="bg-transparent w-full object-contain rounded-2xl shadow-lg"
                                        />
-                                    </Zoom>
+                                    </ImageZoom>
                                  </div>
                               </div>
                               <div className="w-1/2 p-6">
                                  <h3 className="text-xl font-semibold pb-6">
                                     {title}
                                  </h3>
-                                 <p className="text-sm whitespace-pre-line">{description}</p>
+                                 <p className="text-sm whitespace-pre-line">
+                                    {description}
+                                 </p>
                                  <div className="tech-stack pt-6 flex flex-wrap gap-2">
                                     {techStack.map((tech, techIndex) => (
                                        <span
