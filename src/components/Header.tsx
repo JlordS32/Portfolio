@@ -1,9 +1,22 @@
 import { Link } from "react-router";
-import sunIcon from "../assets/icons/sun.svg";
 import resumePdf from "../assets/jaylou_resume.pdf";
 import Button from "./Button";
+import { useEffect, useState } from "react";
+
+import SunIcon from "../assets/icons/sun.svg?react";
+import MoonIcon from "../assets/icons/moon.svg?react";
 
 const Header = () => {
+   const [isDark, setIsDark] = useState<boolean>(false);
+
+   useEffect(() => {
+      if (isDark) {
+         document.documentElement.classList.add("dark");
+      } else {
+         document.documentElement.classList.remove("dark");
+      }
+   }, [isDark]);
+
    return (
       <header className="flex justify-between items-center py-6 media-screen">
          <div className="logo">
@@ -31,14 +44,19 @@ const Header = () => {
             <div>
                <div className="divider mx-6 h-full border-l border-gray-300"></div>
             </div>
-            <div className="others flex gap-x-6">
-               <img src={sunIcon} alt="Dark Mode Toggle" />
+            <div className="others flex justify-center align-center gap-x-6">
+               <div
+                  className="self-center cursor-pointer"
+                  onClick={() => setIsDark(!isDark)}
+               >
+                  {isDark ? (
+                     <MoonIcon className="w-8 h-8 text-gray-600" />
+                  ) : (
+                     <SunIcon className="w-8 h-8 text-gray-600" />
+                  )}
+               </div>
                <Button>
-                  <a 
-                     href={resumePdf} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                  >
+                  <a href={resumePdf} target="_blank" rel="noopener noreferrer">
                      Resume
                   </a>
                </Button>

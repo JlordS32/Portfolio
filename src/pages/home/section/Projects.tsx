@@ -1,6 +1,7 @@
 import Card from "../../../components/Card";
 import DashboardApp from "../../../assets/img/pds.png";
 import MagiPlant from "../../../assets/img/magiplant.png";
+import Audiophile from "../../../assets/img/audiophile.png";
 import CodeIcon from "../../../assets/icons/code.svg?react";
 import GlobeIcon from "../../../assets/icons/globe.svg?react";
 import Zoom from "react-medium-image-zoom";
@@ -50,19 +51,19 @@ const Projects = () => {
          live: "https://jlords32.itch.io/magiplant",
       },
       {
-         title: "Audiophile website",
+         title: "Audiophile E-commerce Website",
          description:
-            "Originally conceived during a 36-hour game jam, Magi Plant is an ambitious genre-bending project that fuses Tower Defense strategy with Roguelike progression and Idle game mechanics. As the Team Lead for a group of three, I directed the technical vision and engineered the core systems in Unity.\n\n The gameplay centers on a fantasy living core mechanic: players utilise a Day/Night cycle to farm 'Sun' and 'Water' resources, strengthening their central tree and boosting passive generation rates before defending against infinite, procedurally escalating waves of enemies by night.\n\n Below is a demo submitted to gamejam, however the current progress of the game is far ahead!",
+            "A visually engaging, multi-page e-commerce platform built as a high-fidelity solution to a Frontend Mentor challenge. This fully responsive application simulates a complete user journey, featuring product category pages, a functional shopping cart with global state management, and a validated checkout form.\n\n It leverages modern React patterns and libraries to deliver smooth transitions, toast notifications, and a polished user experience across all devices.",
          techStack: [
-            "Unity Engine",
-            "C#",
-            "Unity UI Toolkit",
-            "A* Pathfinding",
-            "2D Tilemaps",
+            "React",
+            "TypeScript",
+            "Vite",
+            "CSS modules",
+            "React Router",
          ],
-         imageUrl: MagiPlant,
-         src: "https://github.com/JlordS32/MagiPlant",
-         live: "https://jlords32.itch.io/magiplant",
+         imageUrl: Audiophile,
+         src: "https://github.com/jlords32/audiophile-e-commerce-website",
+         live: "https://audiophile-website-navy.vercel.app/",
       },
    ];
 

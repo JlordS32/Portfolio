@@ -5,6 +5,8 @@ html {
    scroll-behavior: smooth;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
    --text-base: 16px;
    --font-sans: "Inter", sans-serif;
