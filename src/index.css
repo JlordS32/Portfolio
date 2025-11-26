@@ -15,6 +15,8 @@ html {
 @layer base {
    body {
       @apply bg-white w-full text-gray-600;
+      /* Dark mode */
+      @apply dark:bg-gray-950
    }
 
    h1 {
@@ -38,29 +40,61 @@ html {
    h3,
    h4 {
       @apply font-bold text-gray-900;
+      @apply dark:text-white;
    }
 
-   p {
-      @apply text-base;
+   p, span {
+      @apply text-base text-gray-600;
+      /* Dark mode */
+      @apply dark:text-gray-300;
    }
 
    section {
       @apply py-20 bg-white;
+   }
+
+   section:nth-child(even) {
+      @apply bg-gray-100;
+      @apply dark:bg-gray-900;
+   }
+
+   section:nth-child(odd) {
+      @apply bg-white;
+      @apply dark:bg-gray-950;
+   }
+
+   svg {
+      @apply text-gray-900;
+      @apply dark:text-white;
    }
 }
 
 @layer components {
    .btn {
       @apply px-6 py-2 bg-gray-900 text-white hover:bg-white hover:text-gray-900 border border-gray-900 rounded-2xl transition cursor-pointer;
+      /* Dark mode */
+      @apply dark:bg-white dark:hover:bg-gray-900 dark:hover:border-white dark:text-gray-900 dark:hover:text-white;
+   }
+
+   .nav-link {
+      @apply text-gray-600;
+      @apply dark:text-white;
    }
 
    .social-link,
    .nav-link {
       @apply relative cursor-pointer flex items-center justify-center;
-      @apply after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-black;
+      @apply after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-gray-900;
       @apply after:content-[''];
       @apply after:scale-x-0 after:origin-left after:transition-transform after:duration-300;
       @apply hover:after:scale-x-100;
+
+      /* Dark Mode */
+      @apply dark:after:bg-white;
+   }
+
+   .social-link svg {
+      @apply w-6 h-10;
    }
 
    .nav-link {
@@ -78,11 +112,12 @@ html {
    }
 
    .profile-picture {
-      @apply z-20 before:absolute before:content-[''] before:w-[92.5%] before:h-[92.5%] relative before:z-10 before:bg-gray-300;
+      @apply z-20 before:absolute before:content-[''] before:w-[92.5%] before:h-[92.5%] relative before:z-10 before:bg-gray-300 dark:before:bg-gray-600;
    }
 
    .profile-picture img {
       @apply relative z-20 p-2 bg-white;
+      @apply dark:bg-gray-950;
    }
 
    .section {

@@ -21,9 +21,9 @@ const Header = () => {
       <header className="flex justify-between items-center py-6 media-screen">
          <div className="logo">
             <Link to="/">
-               <div className="text-4xl font-bold text-gray-950">
+               <span className="text-4xl font-bold text-gray-950 dark:text-white">
                   {"<JR />"}
-               </div>
+               </span>
             </Link>
          </div>
          <div className="nav flex">
@@ -50,7 +50,7 @@ const Header = () => {
                   onClick={() => setIsDark(!isDark)}
                >
                   {isDark ? (
-                     <MoonIcon className="w-8 h-8 text-gray-600" />
+                     <MoonIcon className="w-8 h-8 text-white" />
                   ) : (
                      <SunIcon className="w-8 h-8 text-gray-600" />
                   )}

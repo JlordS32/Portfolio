@@ -22,7 +22,7 @@ const Contact = () => {
    };
 
    return (
-      <section id="contact" className="bg-gray-100">
+      <section id="contact">
          <div className="media-screen">
             <div className="flex flex-col">
                <p className="section">Contact Me</p>

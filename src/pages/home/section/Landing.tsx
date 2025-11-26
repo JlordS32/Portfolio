@@ -1,7 +1,8 @@
 // SVG
-import Github from "../../../assets/icons/github.svg";
-import LinkedIn from "../../../assets/icons/linkedin.svg";
-import MapPin from "../../../assets/icons/map-pin.svg";
+import GithubIcon from "../../../assets/icons/github.svg?react";
+import LinkedInIcon from "../../../assets/icons/linkedin.svg?react";
+import MapPinIcon from "../../../assets/icons/map-pin.svg?react";
+import FrontendMentorIcon from "../../../assets/icons/frontend-mentor.svg?react";
 
 // IMG
 import ProfilePicture from "../../../assets/img/pfp.jpg";
@@ -12,15 +13,15 @@ const Landing = () => {
          <div className="landing w-2/3">
             <h1 className="leading-24">Hi, I'm Jaylou 👋</h1>
             <p className="mt-4">
-               I am a <strong>Computer Science (Honours) student at UTS</strong>, passionate
-               about bridging the gap between complex theory and practical
-               application. My focus lies in Software Engineering and Data
-               Analytics, leveraging tools like React, TypeScript, and Docker to
-               build robust solutions.
+               I am a <strong>Computer Science (Honours) student at UTS</strong>
+               , passionate about bridging the gap between complex theory and
+               practical application. My focus lies in Software Engineering and
+               Data Analytics, leveraging tools like React, TypeScript, and
+               Docker to build robust solutions.
             </p>
             <div className="location mt-12">
                <div className="flex gap-2 ">
-                  <img src={MapPin} alt="Location Icon" />
+                  <MapPinIcon />
                   <span>Sydney, NSW</span>
                </div>
             </div>
@@ -31,7 +32,7 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <img src={Github} alt="GitHub Icon" />
+                     <GithubIcon />
                   </a>
                </div>
                <div className="social-link">
@@ -40,7 +41,16 @@ const Landing = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <img src={LinkedIn} alt="LinkedIn Icon" />
+                     <LinkedInIcon />
+                  </a>
+               </div>
+               <div className="social-link">
+                  <a
+                     href="https://www.frontendmentor.io/profile/JlordS32"
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                     <FrontendMentorIcon />
                   </a>
                </div>
             </div>

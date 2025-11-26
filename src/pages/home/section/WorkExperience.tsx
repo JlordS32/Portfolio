@@ -33,7 +33,7 @@ const WorkExperience = () => {
    ];
 
    return (
-      <section id="work" className="work bg-gray-100">
+      <section id="work" className="work">
          <div className="media-screen ">
             <div className="flex flex-col">
                <p className="section">Work Experience</p>
