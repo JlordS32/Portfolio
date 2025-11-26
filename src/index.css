@@ -17,7 +17,7 @@ html {
    body {
       @apply bg-white w-full text-gray-600;
       /* Dark mode */
-      @apply dark:bg-gray-950
+      @apply dark:bg-gray-950;
    }
 
    h1 {

@@ -12,9 +12,9 @@ import ProfilePicture from "../../../assets/img/pfp.jpg";
 
 const Landing = () => {
    return (
-      <div className="h-[550px] flex flex-row justify-between items-center my-14 media-screen">
-         <div className="landing w-2/3">
-            <h1 className="leading-24">Hi, I'm Jaylou 👋</h1>
+      <div className="md:h-[550px] p-4 flex flex-col-reverse justify-between items-center my-16 media-screen md:p-0 md:flex-row ">
+         <div className="landing md:w-2/3">
+            <h1 className="leading-4 mt-24 md:leading-24">Hi, I'm Jaylou 👋</h1>
             <p className="mt-4">
                I am a <strong>Computer Science (Honours) student at UTS</strong>
                , passionate about bridging the gap between complex theory and
@@ -58,7 +58,7 @@ const Landing = () => {
                </div>
             </div>
          </div>
-         <div className="profile-picture before:left-1/5 before:top-1/5">
+         <div className="profile-picture md:before:left-1/5 md:before:top-1/5 before:top-1/8 before:left-1/8">
             <ImageZoom
                zoomMargin={100}
                backdropClassName={cn(

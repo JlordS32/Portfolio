@@ -1,10 +1,14 @@
 import { Link } from "react-router";
-import resumePdf from "../assets/jaylou_resume.pdf";
-import Button from "./Button";
 import { useEffect, useState } from "react";
 
+// Components
+import resumePdf from "../assets/jaylou_resume.pdf";
+import Button from "./Button";
+
+// SVGs
 import SunIcon from "../assets/icons/sun.svg?react";
 import MoonIcon from "../assets/icons/moon.svg?react";
+import MenuIcon from "..//assets/icons/menu.svg?react";
 
 const Header = () => {
    const [isDark, setIsDark] = useState<boolean>(() => {
@@ -34,7 +38,7 @@ const Header = () => {
    }, [isDark]);
 
    return (
-      <header className="flex justify-between items-center py-6 media-screen">
+      <header className="flex justify-between items-center p-4 media-screen">
          <div className="logo">
             <Link to="/">
                <span className="text-4xl font-bold text-gray-950 dark:text-white">
@@ -42,7 +46,7 @@ const Header = () => {
                </span>
             </Link>
          </div>
-         <div className="nav flex">
+         <div className="nav hidden md:flex">
             <div className="links flex items-center justify-center gap-6 font-medium">
                <a href="#about" className="nav-link">
                   About
@@ -77,6 +81,9 @@ const Header = () => {
                   </a>
                </Button>
             </div>
+         </div>
+         <div className="flex md:hidden">
+            <MenuIcon />
          </div>
       </header>
    );
