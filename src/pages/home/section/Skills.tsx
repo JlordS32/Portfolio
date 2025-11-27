@@ -12,7 +12,7 @@ const Skills = () => {
          <div className="media-screen">
             <div className="flex flex-col">
                <p className="section">Skills</p>
-               <p className="text-center mt-6 mb-12">
+               <p className="text-center mt-6 mb-12 w-2/3 self-center md:w-full">
                   The skills, tools and technology I'm proficient at:
                </p>
                <div className="flex flex-wrap justify-center gap-10 max-w-6xl mx-auto">
@@ -26,7 +26,7 @@ const Skills = () => {
                      const fileName = path;
 
                      return (
-                        <div key={fileName} className="icon-wrapper w-16">
+                        <div key={fileName} className="icon-wrapper w-16 fill-black dark:fill-white">
                            <IconComponent className="icon w-16 h-16" />
                         </div>
                      );
