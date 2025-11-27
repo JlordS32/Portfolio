@@ -35,7 +35,7 @@ const WorkExperience = () => {
    return (
       <section id="work" className="work">
          <div className="media-screen ">
-            <div className="flex flex-col">
+            <div className="flex flex-col px-4">
                <p className="section">Work Experience</p>
                <p className="text-center mt-6 mb-12">
                   Here is a quick summary of my work experience:
@@ -53,9 +53,9 @@ const WorkExperience = () => {
                         end,
                      } = exp;
                      return (
-                        <Card className="p-6" key={index}>
-                           <div className="flex flex-row gap-x-12">
-                              <div className="company-logo">
+                        <Card className="p-8 md:p-6" key={index}>
+                           <div className="flex flex-col gap-x-12 md:flex-row">
+                              <div className="company-logo self-center md:justify-start">
                                  <a
                                     href={companyUrl}
                                     target="_blank"
@@ -68,8 +68,21 @@ const WorkExperience = () => {
                                     />
                                  </a>
                               </div>
-                              <div className="flex flex-col w-[55%]">
-                                 <h3 className="text-xl font-semibold pb-6">
+                              <div className="text-sm grow text-left block self-center md:justify-start md:hidden">
+                                 {`${start.toLocaleString("default", {
+                                    month: "short",
+                                    year: "numeric",
+                                 })} - ${
+                                    end
+                                       ? end.toLocaleString("default", {
+                                            month: "short",
+                                            year: "numeric",
+                                         })
+                                       : "Present"
+                                 }`}
+                              </div>
+                              <div className="flex flex-col md:w-[55%]">
+                                 <h3 className="text-xl font-semibold py-4 md:pb-6 self-center md:justify-start">
                                     {position}
                                  </h3>
                                  <ul className="list-disc text-sm text-wrap">
@@ -78,7 +91,7 @@ const WorkExperience = () => {
                                     ))}
                                  </ul>
                               </div>
-                              <div className="text-sm grow text-end">
+                              <div className="text-sm grow text-end hidden md:block">
                                  {`${start.toLocaleString("default", {
                                     month: "short",
                                     year: "numeric",

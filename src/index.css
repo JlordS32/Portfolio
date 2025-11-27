@@ -134,7 +134,7 @@ html {
    }
 
    .card {
-      @apply bg-white dark:bg-gray-800 dark:text-gray-300 shadow-md/20 rounded-lg transition-transform duration-300 w-[900px] mx-auto overflow-hidden;
+      @apply bg-white dark:bg-gray-800 dark:text-gray-300 shadow-md/20 rounded-lg transition-transform duration-300 max-w-[900px] mx-auto overflow-hidden;
       @apply hover:shadow-xl hover:scale-101;
    }
 
