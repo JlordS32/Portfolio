@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0c0c0c"/>
+  
+  <g font-family="monospace, sans-serif" font-weight="900" font-size="140" text-anchor="middle" dominant-baseline="central">
+    <text x="248" y="256" fill="#FF0000" style="mix-blend-mode: screen;">&lt;JR /&gt;</text>
+    
+    <text x="264" y="256" fill="#0000FF" style="mix-blend-mode: screen;">&lt;JR /&gt;</text>
+    
+    <text x="256" y="256" fill="#FFFFFF">&lt;JR /&gt;</text>
+  </g>
+</svg>
