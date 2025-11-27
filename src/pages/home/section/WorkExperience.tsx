@@ -82,7 +82,7 @@ const WorkExperience = () => {
                                  }`}
                               </div>
                               <div className="flex flex-col md:w-[55%]">
-                                 <h3 className="text-xl font-semibold py-4 md:pb-6 self-center md:justify-start">
+                                 <h3 className="text-xl font-semibold py-4 md:pb-6 justify-center md:justify-start">
                                     {position}
                                  </h3>
                                  <ul className="list-disc text-sm text-wrap">

@@ -18,7 +18,7 @@ const About = () => {
                      </div>
                   </div>
                   <div className="p-4">
-                     <h4 className="leading-25 text-center md:text-left ">
+                     <h4 className="py-12 text-center md:text-left text-balance">
                         Curious about me? Here you have it.
                      </h4>
                      <p>
