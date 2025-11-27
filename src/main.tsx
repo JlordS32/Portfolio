@@ -15,6 +15,7 @@ import "./index.css";
 
 // TODO: Link supabase to dynamically update skills, projects, and work experience section.
 // TODO: Add a login page to update the content through a dashboard.
+// BUG: Some elements are overflowing when screen width goes down (before mobile).
 
 // LAYOUT
 const RootLayout = () => {
