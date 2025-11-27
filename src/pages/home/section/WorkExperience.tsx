@@ -35,7 +35,7 @@ const WorkExperience = () => {
    return (
       <section id="work" className="work">
          <div className="media-screen ">
-            <div className="flex flex-col px-4">
+            <div className="flex flex-col px-4 md:p-0">
                <p className="section">Work Experience</p>
                <p className="text-center mt-6 mb-12">
                   Here is a quick summary of my work experience:

@@ -70,7 +70,7 @@ const Projects = () => {
    return (
       <section id="projects" className="project">
          <div className="media-screen">
-            <div className="flex flex-col">
+            <div className="flex flex-col px-4 md:p-0">
                <p className="section">Projects</p>
                <p className="text-center mt-6 mb-12">
                   A selection of personal and collaborative projects I've worked
@@ -85,13 +85,13 @@ const Projects = () => {
                      return (
                         <Card className="p-0" key={index}>
                            <div
-                              className={`flex ${
+                              className={`flex flex-col ${
                                  index % 2 === 0
-                                    ? "flex-row"
-                                    : "flex-row-reverse"
+                                    ? "md:flex-row"
+                                    : "md:flex-row-reverse"
                               } gap-6`}
                            >
-                              <div className="img-container flex align-center justify-center w-1/2 bg-gray-100 dark:bg-gray-700 p-6">
+                              <div className="img-container flex align-center justify-center w-full md:w-1/2 bg-gray-100 dark:bg-gray-700 md:p-6">
                                  <div className="self-center">
                                     <ImageZoom
                                        zoomMargin={100}
@@ -102,12 +102,12 @@ const Projects = () => {
                                        <img
                                           src={imageUrl}
                                           alt={`${title} Image`}
-                                          className="bg-transparent w-full object-contain rounded-2xl shadow-lg"
+                                          className="bg-transparent w-full object-contain md:rounded-2xl shadow-lg"
                                        />
                                     </ImageZoom>
                                  </div>
                               </div>
-                              <div className="w-1/2 p-6">
+                              <div className="w-full md:w-1/2 p-6">
                                  <h3 className="text-xl font-semibold pb-6">
                                     {title}
                                  </h3>

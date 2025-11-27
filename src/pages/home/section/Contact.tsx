@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "../../../components/Button";
 import CheckMarkIcon from "../../../assets/icons/checkmark.svg?react";
 import CopyIcon from "../../../assets/icons/copy.svg?react";
 import EmailIcon from "../../../assets/icons/mail.svg?react";
@@ -26,34 +25,31 @@ const Contact = () => {
          <div className="media-screen">
             <div className="flex flex-col">
                <p className="section">Contact Me</p>
-               <p className="text-lg text-center mt-6 mb-12 text-wrap w-1/2 mx-auto">
+               <p className="text-lg text-center mt-6 text-wrap px-4 md:w-1/2 mx-auto">
                   What’s next? Feel free to reach out to me if you're looking
                   for a developer, have a query, or simply want to connect.
                </p>
-               <div className="flex flex-col gap-6 mb-12">
+               <div className="flex flex-col gap-2 my-6 md:my-12 md:gap-6">
                   {/* --- EMAIL SECTION --- */}
                   <div className="flex flex-row items-center justify-center gap-4">
                      <div>
                         <EmailIcon className="inline-block w-8 h-8 mr-2 text-gray-400" />
                      </div>
-                     <div className="text-2xl dark:text-white">jlordsty128@gmail.com</div>
-                     <Button
+                     <div className="text-lg md:text-2xl dark:text-white">
+                        jlordsty128@gmail.com
+                     </div>
+                     <button
                         onClick={() =>
                            handleCopy("jlordsty128@gmail.com", "email")
                         }
+                        className="cursor-pointer"
                      >
                         {copiedId === "email" ? (
-                           <>
-                              <CheckMarkIcon className="inline-block w-4 h-4 mr-2" />
-                              Copied!
-                           </>
+                           <CheckMarkIcon className="inline-block w-8 h-8 text-gray-400" />
                         ) : (
-                           <>
-                              <CopyIcon className="inline-block w-4 h-4 mr-2" />
-                              Copy
-                           </>
+                           <CopyIcon className="inline-block w-8 h-8 text-gray-400" />
                         )}
-                     </Button>
+                     </button>
                   </div>
 
                   {/* --- PHONE SECTION --- */}
@@ -61,22 +57,19 @@ const Contact = () => {
                      <div>
                         <PhoneIcon className="inline-block w-8 h-8 mr-2 text-gray-400" />
                      </div>
-                     <div className="text-2xl dark:text-white">+61449977526</div>
-                     <Button
+                     <div className="text-lg md:text-2xl dark:text-white">
+                        +61449977526
+                     </div>
+                     <button
                         onClick={() => handleCopy("+61449977526", "phone")}
+                        className="cursor-pointer"
                      >
                         {copiedId === "phone" ? (
-                           <>
-                              <CheckMarkIcon className="inline-block w-4 h-4 mr-2" />
-                              Copied!
-                           </>
+                           <CheckMarkIcon className="inline-block w-8 h-8 text-gray-400" />
                         ) : (
-                           <>
-                              <CopyIcon className="inline-block w-4 h-4 mr-2" />
-                              Copy
-                           </>
+                           <CopyIcon className="inline-block w-8 h-8 text-gray-400"/>
                         )}
-                     </Button>
+                     </button>
                   </div>
                </div>
                <div className="mx-auto">
