@@ -36,7 +36,7 @@ const Header = () => {
       } else {
          document.body.style.overflow = "unset";
       }
-   }, [isMenuOpen])
+   }, [isMenuOpen]);
 
    const closeMenu = () => setIsMenuOpen(false);
 
@@ -78,7 +78,11 @@ const Header = () => {
                   )}
                </div>
                <Button>
-                  <a href="https://drive.google.com/file/d/1e0z5MmQ3_MINJDHgJFbO-LwZ6FWD0-4n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <a
+                     href="https://drive.google.com/file/d/1e0z5MmQ3_MINJDHgJFbO-LwZ6FWD0-4n/view?usp=sharing"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
                      Resume
                   </a>
                </Button>
@@ -87,7 +91,7 @@ const Header = () => {
 
          {/* Mobile */}
          <div
-            className="flex md:hidden cursor-pointer z-50"
+            className="flex md:hidden cursor-pointer z-50 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
          >
             {isMenuOpen ? (
@@ -99,52 +103,55 @@ const Header = () => {
             )}
          </div>
 
-         {isMenuOpen && (
-            <div className="fixed inset-0 z-40 bg-white dark:bg-gray-950 flex flex-col items-center justify-center gap-8 md:hidden transition-all">
-               <div className="flex flex-col items-center gap-6 text-2xl font-medium">
-                  {["About", "Work", "Projects", "Contact"].map((item) => (
-                     <a
-                        key={item}
-                        href={`#${item.toLowerCase()}`}
-                        className="nav-link text-gray-900 dark:text-white"
-                        onClick={closeMenu}
-                     >
-                        {item}
-                     </a>
-                  ))}
-               </div>
-
-               <div className="w-16 h-px bg-gray-300 my-2"></div>
-
-               <div className="flex flex-col items-center gap-6">
-                  <div
-                     className="cursor-pointer flex items-center gap-2"
-                     onClick={() => setIsDark(!isDark)}
+         {/* Mobile Menu Modal */}
+         <div
+            className={`fixed inset-0 z-40 bg-white dark:bg-gray-950 flex flex-col items-center justify-center gap-8 md:hidden h-screen w-screen transition-transform duration-300 ease-in-out ${
+               isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+         >
+            <div className="flex flex-col items-center gap-6 text-2xl font-medium">
+               {["About", "Work", "Projects", "Contact"].map((item) => (
+                  <a
+                     key={item}
+                     href={`#${item.toLowerCase()}`}
+                     className="nav-link text-gray-900 dark:text-white hover:text-gray-600 transition-colors"
+                     onClick={closeMenu}
                   >
-                     {isDark ? (
-                        <>
-                           <MoonIcon className="w-8 h-8 text-white" />
-                           <span className="text-white">Dark Mode</span>
-                        </>
-                     ) : (
-                        <>
-                           <SunIcon className="w-8 h-8 text-gray-600" />
-                           <span className="text-gray-900">Light Mode</span>
-                        </>
-                     )}
-                  </div>
-                  <Button onClick={closeMenu}>
-                     <a
-                        href="https://drive.google.com/file/d/1e0z5MmQ3_MINJDHgJFbO-LwZ6FWD0-4n/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        Resume
-                     </a>
-                  </Button>
-               </div>
+                     {item}
+                  </a>
+               ))}
             </div>
-         )}
+
+            <div className="w-16 h-px bg-gray-300 my-2"></div>
+
+            <div className="flex flex-col items-center gap-6">
+               <div
+                  className="cursor-pointer flex items-center gap-2"
+                  onClick={() => setIsDark(!isDark)}
+               >
+                  {isDark ? (
+                     <>
+                        <MoonIcon className="w-8 h-8 text-white" />
+                        <span className="text-white">Dark Mode</span>
+                     </>
+                  ) : (
+                     <>
+                        <SunIcon className="w-8 h-8 text-gray-600" />
+                        <span className="text-gray-900">Light Mode</span>
+                     </>
+                  )}
+               </div>
+               <Button onClick={closeMenu}>
+                  <a
+                     href="https://drive.google.com/file/d/1e0z5MmQ3_MINJDHgJFbO-LwZ6FWD0-4n/view?usp=sharing"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     Resume
+                  </a>
+               </Button>
+            </div>
+         </div>
       </header>
    );
 };
