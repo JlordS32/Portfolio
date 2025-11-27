@@ -48,7 +48,8 @@ html {
       @apply dark:text-white;
    }
 
-   p, span {
+   p,
+   span {
       @apply text-base text-gray-600;
       /* Dark mode */
       @apply dark:text-gray-300;
@@ -77,8 +78,8 @@ html {
    }
 
    .nav-link {
-      @apply text-gray-600;
-      @apply dark:text-white;
+      @apply text-gray-600 hover:text-black;
+      @apply dark:text-gray-300 dark:hover:text-white;
    }
 
    .social-link,
@@ -97,10 +98,6 @@ html {
       @apply w-6 h-10;
    }
 
-   .nav-link {
-      @apply hover:text-black;
-   }
-
    ul li {
       @apply mb-1;
    }
@@ -112,7 +109,7 @@ html {
 
 @layer utilities {
    .media-screen {
-      @apply md:mx-auto md:max-w-7xl ;
+      @apply md:mx-auto md:max-w-7xl;
    }
 
    .profile-picture {
@@ -256,10 +253,10 @@ html {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+   * {
+      @apply border-border outline-ring/50;
    }
-  body {
-    @apply bg-background text-foreground;
+   body {
+      @apply bg-background text-foreground;
    }
 }
