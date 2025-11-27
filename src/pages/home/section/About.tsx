@@ -4,7 +4,7 @@ import Picture from "../../../assets/img/pfp_1.jpg";
 const About = () => {
    return (
       <section id="about">
-         <div className="media-screen">
+         <div className="media-screen md:px-12 px-6">
             <div className="flex flex-col">
                <p className="section">About me</p>
                <div className="mt-14 flex flex-col gap-x-24 md:flex-row">

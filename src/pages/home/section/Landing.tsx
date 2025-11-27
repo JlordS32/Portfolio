@@ -12,7 +12,7 @@ import ProfilePicture from "../../../assets/img/pfp.jpg";
 
 const Landing = () => {
    return (
-      <div className="md:h-[550px] p-4 flex flex-col-reverse justify-between items-center my-16 media-screen md:p-0 md:flex-row ">
+      <div className="md:h-[550px] flex flex-col-reverse justify-between items-center my-16 media-screen md:flex-row md:px-12 p-6">
          <div className="landing md:w-2/3">
             <h1 className="leading-4 mt-24 md:leading-24">Hi, I'm Jaylou 👋</h1>
             <p className="mt-4">

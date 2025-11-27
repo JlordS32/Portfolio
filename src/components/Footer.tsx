@@ -1,6 +1,6 @@
 const Footer = () => {
    return (
-      <div className="text-center py-8 text-sm">
+      <div className="text-center py-8 text-sm md:px-0 px-6">
          &copy; {new Date().getFullYear()} Developed by{" "}
          <span className="underline">
             <a
