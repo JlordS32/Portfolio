@@ -1,6 +1,6 @@
 const Footer = () => {
    return (
-      <div className="text-center py-8 text-sm">
+      <div className="text-center py-8 text-sm absolute left-0 bottom-0 w-full">
          &copy; {new Date().getFullYear()} Developed by{" "}
          <span className="underline">
             <a
@@ -12,7 +12,7 @@ const Footer = () => {
          . Credits to{" "}
          <span className="underline">
             <a href="https://www.figma.com/@shahsagarm">Sagar Shah</a>
-         </span>
+         </span>{" "}
          for Design. All rights reserved.
       </div>
    );

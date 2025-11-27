@@ -13,8 +13,6 @@ import Footer from "./components/Footer.tsx";
 // STYLES
 import "./index.css";
 
-// TODO: Add dark mode functionality
-// TODO: Optimize for mobile devices
 // TODO: Link supabase to dynamically update skills, projects, and work experience section.
 // TODO: Add a login page to update the content through a dashboard.
 
@@ -36,9 +34,11 @@ const router = createBrowserRouter([
    {
       path: "/",
       Component: RootLayout,
-      children: [{ index: true, Component: Home }],
+      children: [
+         { index: true, Component: Home },
+         { path: "*", Component: NotFound },
+      ],
    },
-   { path: "*", Component: NotFound },
 ]);
 
 createRoot(document.getElementById("root")!).render(

@@ -13,6 +13,10 @@ html {
    --font-sans: "Inter", sans-serif;
 }
 
+#root {
+   @apply min-h-screen relative;
+}
+
 @layer base {
    body {
       @apply bg-white w-full text-gray-600;
