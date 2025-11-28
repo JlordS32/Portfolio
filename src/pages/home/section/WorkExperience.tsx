@@ -55,7 +55,7 @@ const WorkExperience = () => {
                      return (
                         <Card className="p-8 md:p-6" key={index}>
                            <div className="flex flex-col gap-x-12 md:flex-row">
-                              <div className="company-logo self-center md:justify-start">
+                              <div className="company-logo self-center md:self-start">
                                  <a
                                     href={companyUrl}
                                     target="_blank"
