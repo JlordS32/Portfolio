@@ -17,7 +17,7 @@ const About = () => {
                         />
                      </div>
                   </div>
-                  <div className="p-4">
+                  <div>
                      <h4 className="py-12 text-center md:text-left text-balance">
                         Curious about me? Here you have it.
                      </h4>
